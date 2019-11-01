@@ -26,8 +26,6 @@
 
     togglePiece: function(rowIndex, colIndex) {
       this.get(rowIndex)[colIndex] = + !this.get(rowIndex)[colIndex];
-      console.log(this.get(rowIndex));
-      console.log(rowIndex);
       this.trigger('change');
     },
 
@@ -155,8 +153,6 @@
       }
       return anyConflicts;
     },
-
-
 
     // Minor Diagonals - go from top-right to bottom-left
     // --------------------------------------------------------------
